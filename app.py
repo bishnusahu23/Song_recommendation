@@ -16,13 +16,16 @@ df['Name'] = df['Name'].fillna("").str.lower()
 
 # Function to recommend songs from the same cluster
 def recommend_songs(song_name, data, num_recommendations):
+    # Converting to lower case
     song_name = song_name.lower()
-    
+    # checks if the song name exists in the dataset
     if song_name in data['Name'].values:
+        # Stores the cluster id
         cluster = data.loc[data['Name'] == song_name, 'Cluster_id'].values[0]
+        # fetches all the songs in the cluster
         recommendations = data[(data['Cluster_id'] == cluster) & (data['Name'] != song_name)]
         
-        # Check if there are enough songs to sample
+        # Checks if there are enough songs to sample
         if len(recommendations) < num_recommendations:
             return recommendations  # Return all available recommendations
         else:
@@ -43,7 +46,7 @@ number_of_songs = st.slider('Select number of recommended songs:', 1, 10, 5)
 if st.button('Recommend'):
     # Get recommendations
     recommendations = recommend_songs(song, df, number_of_songs)
-
+    # checks if the recommendations variable is not empty
     if not recommendations.empty:
         st.success(f"Recommended songs similar to **{song}**:")
         
