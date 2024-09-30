@@ -6,5 +6,6 @@ The Song Recommendation System is designed to recommend songs similar to the one
 Analysis: The system analyzes the features of the user-selected song.  
 Recommendation: Based on this analysis, it recommends a list of similar tracks from the Spotify dataset, ensuring that the recommendations align with the characteristics of the input song.
 ## ML Techniques used:
+NLP techniques
 Cosine similarity   
 Clustering
