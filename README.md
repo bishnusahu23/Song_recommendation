@@ -10,4 +10,5 @@ NLP techniques to preprocess the text data
 Cosine similarity   
 
 ## Conclusion:
-I experimented with clustering and obtained a silhouette score of around 5. However, I opted for cosine similarity for the song recommendation system, as it is more efficient and effectively calculates the similarity score between each pair of songs.
+I experimented with clustering and obtained a silhouette score of around 5. However, I opted for cosine similarity for the song recommendation system, as it is more efficient and effectively calculates the similarity score between each pair of songs.  
+This model improved the recommendation engine, providing more relevant song suggestions and enhancing the overall user experience on the platform.
