@@ -2,6 +2,10 @@
 # coding: utf-8
 
 # In[3]:
+!pip install spotipy
+!pip install pandas
+!pip install streamlit
+!pip install pickle
 
 import pandas as pd
 import pickle
