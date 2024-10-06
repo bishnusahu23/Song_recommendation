@@ -1,0 +1,15 @@
+spotipy
+langdetect
+pandas
+numpy
+sklearn
+scikit-learn
+matplotlib
+seaborn
+nltk
+spacy
+openpyxl
+wordcloud
+pickle
+scipy
+streamlit
