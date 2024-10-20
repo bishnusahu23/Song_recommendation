@@ -44,7 +44,7 @@ def recommend(Name,top_n):
 
     return recommended_music_names, recommended_music_posters
 
-st.markdown("<h1 style='text-align: center; color: #4CAF50;'>Music Recommendation System</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #4CAF50;'>Song Recommendation System</h1>", unsafe_allow_html=True)
 
 music = pickle.load(open('final_tracks.pkl', 'rb'))
 similarity = pickle.load(open('similarity.pkl', 'rb' ))
