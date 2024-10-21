@@ -1,14 +1,20 @@
 # Song Recommendation System
-This repository contains the implementation of a Song Recommendation System using the Spotify dataset which have been fetched. The system is built with Machine Learning techniques to recommend songs based on the genre, artist, popularity and song features.
-## Objective:
-The Song Recommendation System is designed to recommend songs similar to the one selected by the user. By analyzing the properties of the chosen song, the system generates a list of tracks that closely match the user's preferences.
-### How It Works:
-Analysis: The system analyzes the features of the user-selected song.  
-Recommendation: Based on this analysis, it recommends a list of similar tracks from the Spotify dataset, ensuring that the recommendations align with the characteristics of the input song.
-## ML Techniques used:
-NLP techniques to preprocess the text data   
-Cosine similarity   
+This repository contains the implementation of a Song Recommendation System built using a Spotify dataset. The system leverages Machine Learning techniques to recommend songs based on genre, artist, popularity, and song features.
 
+## Objective:
+The main goal of this system is to recommend songs similar to the one selected by the user. By analyzing the audio properties and metadata of the chosen song, the system generates a list of tracks that closely match the user's preferences.
+
+## How It Works:
+### Analysis:
+The system analyzes various features of the song selected by the user, such as genre, artist, and audio characteristics.
+### Recommendation:
+Using these features, it recommends a list of similar tracks from the Spotify dataset. The recommendations align with the musical characteristics of the input song to provide relevant suggestions.
+## Machine Learning Techniques Used:
+### Natural Language Processing (NLP):
+Preprocessing the textual data (e.g., song titles, artist names, and genres) to prepare it for similarity calculations.
+### Cosine Similarity:
+This method computes the similarity score between songs based on their feature vectors, identifying songs that are most similar to the selected one.
+## Experimental Insights:
+I initially experimented with clustering techniques, achieving a silhouette score of around 5. However, I opted for cosine similarity in the final implementation, as it is more efficient and provides better results for song recommendation by accurately calculating the similarity score between each pair of songs.
 ## Conclusion:
-I experimented with clustering and obtained a silhouette score of around 5. However, I opted for cosine similarity for the song recommendation system, as it is more efficient and effectively calculates the similarity score between each pair of songs.  
-This model improved the recommendation engine, providing more relevant song suggestions and enhancing the overall user experience on the platform.
+The use of cosine similarity improved the recommendation engine by providing more relevant and personalized song suggestions. This significantly enhanced the user experience by tailoring the recommendations to the user's preferences.
