@@ -1,5 +1,5 @@
 # Song Recommendation System
-This repository contains the implementation of a Song Recommendation System built using a Spotify dataset. The system leverages Machine Learning techniques to recommend songs based on genre, artist, popularity, and song features.
+This repository features the implementation of a Song Recommendation System built using a Spotify dataset, scraped via the Spotify Web API. The system utilizes Machine Learning techniques to recommend songs based on various factors such as genre, artist, popularity, and audio features
 
 ## Objective:
 The main goal of this system is to recommend songs similar to the one selected by the user. By analyzing the audio properties and metadata of the chosen song, the system generates a list of tracks that closely match the user's preferences.
