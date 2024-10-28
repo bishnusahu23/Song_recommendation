@@ -18,3 +18,5 @@ This method computes the similarity score between songs based on their feature v
 I initially experimented with clustering techniques, achieving a silhouette score of around 5. However, I opted for cosine similarity in the final implementation, as it is more efficient and provides better results for song recommendation by accurately calculating the similarity score between each pair of songs.
 ## Conclusion:
 The use of cosine similarity improved the recommendation engine by providing more relevant and personalized song suggestions. This significantly enhanced the user experience by tailoring the recommendations to the user's preferences.
+## Deployment using streamlit: 
+https://songrecommendation-wckxeqit7s3ynb8xkcyunh.streamlit.app/
